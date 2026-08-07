@@ -27,7 +27,7 @@ jobs:
         run: python scripts/build_skill.py --output dist/skill.zip
 
       - name: Upload skill package
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: select-model-skill
           path: dist/skill.zip
