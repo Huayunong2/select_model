@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "first_pass_success": true,
+  "final_success": true,
+  "tests_passed": true,
+  "user_retry": false,
+  "fallback_triggered": false,
+  "quality_score": 0.92,
+  "human_edit_minutes": 3,
+  "latency_seconds": 75,
+  "cost": 0.21,
+  "tool_cost": 0
+}

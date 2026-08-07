@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.0",
+  "records": [
+    {
+      "schema_version": "1.0",
+      "source_id": "codexradar",
+      "observed_at": "2026-08-06T00:00:00Z",
+      "subject": {
+        "model": "gpt-5.6-sol",
+        "effort": "medium",
+        "snapshot": "gpt-5.6-sol"
+      },
+      "metric": {
+        "name": "score",
+        "value": 90,
+        "higher_is_better": true,
+        "version": "example-2026-08"
+      },
+      "match": "exact",
+      "sample_size": 1000,
+      "ci_half_width": 2.0,
+      "harness": "example-harness",
+      "snapshot_id": "codexradar-2026-08-06",
+      "source_url": "https://example.com/evidence/codexradar",
+      "raw_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "codexradar",
+      "observed_at": "2026-08-06T00:00:00Z",
+      "subject": {
+        "model": "gpt-5.6-terra",
+        "effort": "medium",
+        "snapshot": "gpt-5.6-terra"
+      },
+      "metric": {
+        "name": "score",
+        "value": 84,
+        "higher_is_better": true,
+        "version": "example-2026-08"
+      },
+      "match": "exact",
+      "sample_size": 1000,
+      "ci_half_width": 2.0,
+      "harness": "example-harness",
+      "snapshot_id": "codexradar-2026-08-06",
+      "source_url": "https://example.com/evidence/codexradar",
+      "raw_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "codexradar",
+      "observed_at": "2026-08-06T00:00:00Z",
+      "subject": {
+        "model": "gpt-5.6-luna",
+        "effort": "medium",
+        "snapshot": "gpt-5.6-luna"
+      },
+      "metric": {
+        "name": "score",
+        "value": 77,
+        "higher_is_better": true,
+        "version": "example-2026-08"
+      },
+      "match": "exact",
+      "sample_size": 1000,
+      "ci_half_width": 2.0,
+      "harness": "example-harness",
+      "snapshot_id": "codexradar-2026-08-06",
+      "source_url": "https://example.com/evidence/codexradar",
+      "raw_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "artificial_analysis",
+      "observed_at": "2026-08-06T00:00:00Z",
+      "subject": {
+        "model": "gpt-5.6-sol",
+        "effort": "medium",
+        "snapshot": "gpt-5.6-sol"
+      },
+      "metric": {
+        "name": "score",
+        "value": 88,
+        "higher_is_better": true,
+        "version": "example-2026-08"
+      },
+      "match": "exact",
+      "sample_size": 1000,
+      "ci_half_width": 2.0,
+      "harness": "example-harness",
+      "snapshot_id": "artificial_analysis-2026-08-06",
+      "source_url": "https://example.com/evidence/artificial_analysis",
+      "raw_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "artificial_analysis",
+      "observed_at": "2026-08-06T00:00:00Z",
+      "subject": {
+        "model": "gpt-5.6-terra",
+        "effort": "medium",
+        "snapshot": "gpt-5.6-terra"
+      },
+      "metric": {
+        "name": "score",
+        "value": 83,
+        "higher_is_better": true,
+        "version": "example-2026-08"
+      },
+      "match": "exact",
+      "sample_size": 1000,
+      "ci_half_width": 2.0,
+      "harness": "example-harness",
+      "snapshot_id": "artificial_analysis-2026-08-06",
+      "source_url": "https://example.com/evidence/artificial_analysis",
+      "raw_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "artificial_analysis",
+      "observed_at": "2026-08-06T00:00:00Z",
+      "subject": {
+        "model": "gpt-5.6-luna",
+        "effort": "medium",
+        "snapshot": "gpt-5.6-luna"
+      },
+      "metric": {
+        "name": "score",
+        "value": 79,
+        "higher_is_better": true,
+        "version": "example-2026-08"
+      },
+      "match": "exact",
+      "sample_size": 1000,
+      "ci_half_width": 2.0,
+      "harness": "example-harness",
+      "snapshot_id": "artificial_analysis-2026-08-06",
+      "source_url": "https://example.com/evidence/artificial_analysis",
+      "raw_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    }
+  ]
+}

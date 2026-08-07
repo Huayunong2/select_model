@@ -1,0 +1,69 @@
+{
+  "request": {
+    "tools": [
+      {
+        "type": "function",
+        "name": "run_tests",
+        "description": "<redacted>",
+        "parameters": {
+          "type": "object",
+          "properties": {}
+        }
+      }
+    ],
+    "instructions": "<redacted>",
+    "input": [
+      {
+        "role": "user",
+        "content": "<redacted>"
+      },
+      {
+        "role": "assistant",
+        "content": "<redacted>"
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "input_text",
+            "text": "<redacted>"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "input_file",
+            "file_id": "file_example_123"
+          }
+        ]
+      }
+    ],
+    "model": "gpt-5.6-sol",
+    "reasoning": {
+      "effort": "medium"
+    }
+  },
+  "context_report": {
+    "required": [
+      "conversation",
+      "files",
+      "functions"
+    ],
+    "observable_in_request": [
+      "conversation",
+      "files",
+      "functions",
+      "instructions"
+    ],
+    "declared": [],
+    "declared_but_unobserved": [],
+    "missing": [],
+    "host_only_required": [],
+    "warnings": [],
+    "safe": true,
+    "risk": "medium"
+  },
+  "dry_run": true
+}

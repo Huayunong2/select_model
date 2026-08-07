@@ -1,0 +1,45 @@
+name: 功能建议
+description: 提议新的来源、runtime、策略、存储后端或自动化能力
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 要解决的问题
+      description: 描述具体工作流和当前限制，不要只描述实现方案。
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: 具体输入与期望输出
+      description: 给出至少一个可测试示例。
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: 扩展类型
+      options:
+        - 新模型或模型注册表字段
+        - 新证据来源或 adapter
+        - 新 runtime / host integration
+        - 新成本或校准策略
+        - 新存储后端
+        - CLI / 自动化
+        - 文档 / 示例
+    validations:
+      required: true
+  - type: textarea
+    id: invariants
+    attributes:
+      label: 如何保持安全不变量
+      description: 说明如何避免缺失元数据增信、跨量纲平均、高风险 fail-open、上下文假阳性等问题。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 事实来源与验证计划
+      description: 涉及模型、价格、能力或 benchmark 时，提供官方来源、核验日期和测试计划。

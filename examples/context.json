@@ -1,0 +1,34 @@
+{
+  "required_capabilities": [
+    "conversation",
+    "files",
+    "functions"
+  ],
+  "input_history": [
+    {
+      "role": "user",
+      "content": "We are refactoring the payment module."
+    },
+    {
+      "role": "assistant",
+      "content": "I will preserve current APIs and tests."
+    }
+  ],
+  "input": "Apply the selected refactor plan and return the patch summary.",
+  "file_ids": [
+    "file_example_123"
+  ],
+  "attach_file_ids": true,
+  "instructions": "Preserve public APIs and run available tests.",
+  "tools": [
+    {
+      "type": "function",
+      "name": "run_tests",
+      "description": "Run project tests",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-07T00:00:00Z",
+  "unknown_sources": "reject",
+  "sources": {
+    "codexradar": {
+      "display_name": "CodexRadar",
+      "trust": 1.0,
+      "ttl_hours": 72,
+      "freshness_half_life_hours": 36,
+      "sample_scale": 500,
+      "health_floor": 50,
+      "accepted_metrics": [
+        "iq",
+        "pass_rate",
+        "score"
+      ],
+      "task_relevance": {
+        "coding": 1.0,
+        "agent": 0.72,
+        "research": 0.2,
+        "writing": 0.1,
+        "analysis": 0.3,
+        "general": 0.35
+      },
+      "official_urls": [
+        "https://codexradar.com/",
+        "https://radar.codexradar.com/"
+      ]
+    },
+    "arena_agent": {
+      "display_name": "Arena Agent",
+      "trust": 1.0,
+      "ttl_hours": 1080,
+      "freshness_half_life_hours": 336,
+      "sample_scale": 5000,
+      "accepted_metrics": [
+        "percentile",
+        "rank"
+      ],
+      "task_relevance": {
+        "coding": 0.82,
+        "agent": 1.0,
+        "research": 0.86,
+        "writing": 0.4,
+        "analysis": 0.6,
+        "general": 0.6
+      },
+      "official_urls": [
+        "https://arena.ai/leaderboard/agent"
+      ]
+    },
+    "arena_code": {
+      "display_name": "Arena Code",
+      "trust": 1.0,
+      "ttl_hours": 1080,
+      "freshness_half_life_hours": 336,
+      "sample_scale": 5000,
+      "accepted_metrics": [
+        "percentile",
+        "rank"
+      ],
+      "task_relevance": {
+        "coding": 1.0,
+        "agent": 0.7,
+        "research": 0.2,
+        "writing": 0.1,
+        "analysis": 0.35,
+        "general": 0.35
+      },
+      "official_urls": [
+        "https://arena.ai/leaderboard/code"
+      ]
+    },
+    "arena_webdev": {
+      "display_name": "Arena WebDev",
+      "trust": 0.95,
+      "ttl_hours": 1080,
+      "freshness_half_life_hours": 336,
+      "sample_scale": 5000,
+      "accepted_metrics": [
+        "percentile",
+        "rank"
+      ],
+      "task_relevance": {
+        "coding": 0.9,
+        "agent": 0.72,
+        "research": 0.28,
+        "writing": 0.2,
+        "analysis": 0.25,
+        "general": 0.3
+      },
+      "official_urls": [
+        "https://arena.ai/leaderboard/code/webdev"
+      ]
+    },
+    "arena_text": {
+      "display_name": "Arena Text",
+      "trust": 0.95,
+      "ttl_hours": 1080,
+      "freshness_half_life_hours": 336,
+      "sample_scale": 5000,
+      "accepted_metrics": [
+        "percentile",
+        "rank"
+      ],
+      "task_relevance": {
+        "coding": 0.35,
+        "agent": 0.42,
+        "research": 0.72,
+        "writing": 1.0,
+        "analysis": 0.72,
+        "general": 0.75
+      },
+      "official_urls": [
+        "https://arena.ai/leaderboard/text"
+      ]
+    },
+    "artificial_analysis": {
+      "display_name": "Artificial Analysis",
+      "trust": 0.9,
+      "ttl_hours": 4320,
+      "freshness_half_life_hours": 2880,
+      "sample_scale": 100,
+      "accepted_metrics": [
+        "score",
+        "index"
+      ],
+      "task_relevance": {
+        "coding": 0.72,
+        "agent": 0.78,
+        "research": 0.82,
+        "writing": 0.62,
+        "analysis": 0.9,
+        "general": 0.82
+      },
+      "official_urls": [
+        "https://artificialanalysis.ai/data-api",
+        "https://artificialanalysis.ai/methodology"
+      ]
+    },
+    "swe_bench_live": {
+      "display_name": "SWE-bench-Live",
+      "trust": 0.9,
+      "ttl_hours": 2880,
+      "freshness_half_life_hours": 1440,
+      "sample_scale": 100,
+      "accepted_metrics": [
+        "resolved",
+        "score"
+      ],
+      "task_relevance": {
+        "coding": 0.9,
+        "agent": 0.55,
+        "research": 0.1,
+        "writing": 0.05,
+        "analysis": 0.25,
+        "general": 0.2
+      },
+      "official_urls": [
+        "https://swe-bench-live.github.io/"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "source_id": "codexradar",
+  "location": "examples/collector-source.json",
+  "source_url": "https://example.com/evidence/codexradar",
+  "records_path": "rows",
+  "fields": {
+    "model": "model",
+    "effort": "effort",
+    "value": "score",
+    "sample_size": "sample_size",
+    "ci_half_width": "ci_half_width",
+    "observed_at": "observed_at"
+  },
+  "metric": {
+    "name": "score",
+    "higher_is_better": true,
+    "version": "example-2026-08"
+  },
+  "match": "exact",
+  "harness": "example-harness",
+  "strict": true
+}

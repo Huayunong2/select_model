@@ -1,0 +1,209 @@
+{
+  "schema_version": "4.0",
+  "as_of": "2026-08-07T00:00:00Z",
+  "task": {
+    "task_type": "coding.refactor.cross_file",
+    "risk": "medium",
+    "target_runtime": "api",
+    "repo_id": "example-monorepo",
+    "environment_id": "linux-ci",
+    "estimated_context_tokens": 100000,
+    "estimated_output_tokens": 10000,
+    "required_capabilities": [
+      "functions"
+    ],
+    "features": {
+      "reasoning": {
+        "bucket": "high",
+        "confidence": 0.8
+      },
+      "context": {
+        "bucket": "medium",
+        "confidence": 0.85
+      },
+      "cross_file": {
+        "bucket": "high",
+        "confidence": 0.9
+      },
+      "test_quality": {
+        "bucket": "high",
+        "confidence": 0.9
+      },
+      "detectability": {
+        "bucket": "high",
+        "confidence": 0.85
+      },
+      "rollback": {
+        "bucket": "high",
+        "confidence": 0.85
+      },
+      "horizon": {
+        "bucket": "medium",
+        "confidence": 0.75
+      }
+    },
+    "usage_estimate": {
+      "input_tokens": 100000,
+      "cached_input_tokens": 50000,
+      "cache_write_tokens": 0,
+      "output_tokens": 10000,
+      "tool_cost": 0
+    },
+    "failure_cost": 25,
+    "time_value_per_hour": 10
+  },
+  "candidates": [
+    {
+      "model": "gpt-5.6-sol",
+      "effort": "medium"
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "effort": "medium"
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "effort": "medium"
+    }
+  ],
+  "evidence": [
+    {
+      "schema_version": "1.0",
+      "source_id": "codexradar",
+      "observed_at": "2026-08-06T00:00:00Z",
+      "subject": {
+        "model": "gpt-5.6-sol",
+        "effort": "medium",
+        "snapshot": "gpt-5.6-sol"
+      },
+      "metric": {
+        "name": "score",
+        "value": 90,
+        "higher_is_better": true,
+        "version": "example-2026-08"
+      },
+      "match": "exact",
+      "sample_size": 1000,
+      "ci_half_width": 2.0,
+      "harness": "example-harness",
+      "snapshot_id": "codexradar-2026-08-06",
+      "source_url": "https://example.com/evidence/codexradar",
+      "raw_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "codexradar",
+      "observed_at": "2026-08-06T00:00:00Z",
+      "subject": {
+        "model": "gpt-5.6-terra",
+        "effort": "medium",
+        "snapshot": "gpt-5.6-terra"
+      },
+      "metric": {
+        "name": "score",
+        "value": 84,
+        "higher_is_better": true,
+        "version": "example-2026-08"
+      },
+      "match": "exact",
+      "sample_size": 1000,
+      "ci_half_width": 2.0,
+      "harness": "example-harness",
+      "snapshot_id": "codexradar-2026-08-06",
+      "source_url": "https://example.com/evidence/codexradar",
+      "raw_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "codexradar",
+      "observed_at": "2026-08-06T00:00:00Z",
+      "subject": {
+        "model": "gpt-5.6-luna",
+        "effort": "medium",
+        "snapshot": "gpt-5.6-luna"
+      },
+      "metric": {
+        "name": "score",
+        "value": 77,
+        "higher_is_better": true,
+        "version": "example-2026-08"
+      },
+      "match": "exact",
+      "sample_size": 1000,
+      "ci_half_width": 2.0,
+      "harness": "example-harness",
+      "snapshot_id": "codexradar-2026-08-06",
+      "source_url": "https://example.com/evidence/codexradar",
+      "raw_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "artificial_analysis",
+      "observed_at": "2026-08-06T00:00:00Z",
+      "subject": {
+        "model": "gpt-5.6-sol",
+        "effort": "medium",
+        "snapshot": "gpt-5.6-sol"
+      },
+      "metric": {
+        "name": "score",
+        "value": 88,
+        "higher_is_better": true,
+        "version": "example-2026-08"
+      },
+      "match": "exact",
+      "sample_size": 1000,
+      "ci_half_width": 2.0,
+      "harness": "example-harness",
+      "snapshot_id": "artificial_analysis-2026-08-06",
+      "source_url": "https://example.com/evidence/artificial_analysis",
+      "raw_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "artificial_analysis",
+      "observed_at": "2026-08-06T00:00:00Z",
+      "subject": {
+        "model": "gpt-5.6-terra",
+        "effort": "medium",
+        "snapshot": "gpt-5.6-terra"
+      },
+      "metric": {
+        "name": "score",
+        "value": 83,
+        "higher_is_better": true,
+        "version": "example-2026-08"
+      },
+      "match": "exact",
+      "sample_size": 1000,
+      "ci_half_width": 2.0,
+      "harness": "example-harness",
+      "snapshot_id": "artificial_analysis-2026-08-06",
+      "source_url": "https://example.com/evidence/artificial_analysis",
+      "raw_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    {
+      "schema_version": "1.0",
+      "source_id": "artificial_analysis",
+      "observed_at": "2026-08-06T00:00:00Z",
+      "subject": {
+        "model": "gpt-5.6-luna",
+        "effort": "medium",
+        "snapshot": "gpt-5.6-luna"
+      },
+      "metric": {
+        "name": "score",
+        "value": 79,
+        "higher_is_better": true,
+        "version": "example-2026-08"
+      },
+      "match": "exact",
+      "sample_size": 1000,
+      "ci_half_width": 2.0,
+      "harness": "example-harness",
+      "snapshot_id": "artificial_analysis-2026-08-06",
+      "source_url": "https://example.com/evidence/artificial_analysis",
+      "raw_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    }
+  ]
+}

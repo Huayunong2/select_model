@@ -1,0 +1,12 @@
+{
+  "rows": [
+    {
+      "model": "gpt-5.6-luna",
+      "effort": "medium",
+      "score": 79,
+      "sample_size": 1000,
+      "ci_half_width": 2,
+      "observed_at": "2026-08-06T00:00:00Z"
+    }
+  ]
+}

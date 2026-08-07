@@ -1,0 +1,34 @@
+name: Skill Package
+
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Run release gate
+        run: python scripts/release_check.py
+
+      - name: Build skill.zip
+        run: python scripts/build_skill.py --output dist/skill.zip
+
+      - name: Upload skill package
+        uses: actions/upload-artifact@v4
+        with:
+          name: select-model-skill
+          path: dist/skill.zip
+          if-no-files-found: error

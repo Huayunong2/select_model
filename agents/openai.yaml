@@ -1,0 +1,12 @@
+interface:
+  display_name: Select Model
+  short_description: 保守地结合实时雷达、任务不确定性、真实成本和个人历史，选择够用且更省的模型
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

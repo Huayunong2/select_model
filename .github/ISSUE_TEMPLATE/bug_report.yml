@@ -1,0 +1,67 @@
+name: Bug 报告
+description: 报告可复现的路由、证据、成本、历史或 dispatch 问题
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请勿粘贴 API Key、完整私有 prompt、内部 URL、客户数据或未脱敏代码。
+  - type: input
+    id: version
+    attributes:
+      label: 版本
+      placeholder: 4.0.0 / commit SHA
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: 模块
+      options:
+        - Router
+        - Evidence
+        - Cost
+        - History / Calibration
+        - Dispatch
+        - Automation / Collector
+        - Registry
+        - CLI / Packaging
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 说明预期行为与实际行为。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 最小复现
+      description: 提供已脱敏输入、命令和完整错误。优先使用 examples 的修改版。
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境
+      placeholder: OS、Python、安装方式、目标 runtime
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: 风险与数据影响
+      description: 是否可能导致错误降级、成本低估、上下文丢失、凭据泄露或错误成功率？
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已运行 `python scripts/release_check.py` 或说明无法运行的原因
+        - label: 我已移除凭据、真实私有内容和未脱敏标识
+          required: true
